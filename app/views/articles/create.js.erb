@@ -1,0 +1,9 @@
+
+// render article
+var body = document.getElementById("article");
+body.innerHTML = "<%= j render @article %>" + body.innerHTML;
+
+// clear and focus on input
+var input = document.getElementById("car_name");
+input.value = '';
+input.focus();
